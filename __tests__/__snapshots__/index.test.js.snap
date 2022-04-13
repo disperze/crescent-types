@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`encode 1`] = `
+Object {
+  "airdropId": Long {
+    "high": 0,
+    "low": 1,
+    "unsigned": true,
+  },
+  "conditionType": 4,
+  "recipient": "cosmos1y54exmx84cqtasvjnskf9fpx9c0rk9tk8fv4",
+}
+`;
+
+exports[`fromPartial 1`] = `
+Object {
+  "airdropId": Long {
+    "high": 0,
+    "low": 1,
+    "unsigned": false,
+  },
+  "conditionType": 4,
+  "recipient": "cosmos1y54exmx84cqtasvjnskf9fpx9c0rk9tk8fv4",
+}
+`;
