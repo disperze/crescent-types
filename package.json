@@ -1,6 +1,6 @@
 {
-  "name": "@disperze/crescent-types",
-  "version": "0.0.3",
+  "name": "crescent-types",
+  "version": "0.1.0",
   "description": "crescent protobufs",
   "author": "Giancarlos Salas <me@ginsalex.dev>",
   "homepage": "https://github.com/disperze/crescent-types#readme",
