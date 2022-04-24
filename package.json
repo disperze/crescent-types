@@ -12,15 +12,20 @@
     "test": "__tests__"
   },
   "files": [
-    "main",
-    "module"
+    "cosmos/",
+    "cosmos_proto/",
+    "crescent/",
+    "gogoproto/",
+    "google/",
+    "*.md"
   ],
   "scripts": {
     "build:main": "cross-env BABEL_ENV=production babel src --out-dir main --delete-dir-on-start --extensions \".tsx,.ts,.js\"",
     "build:module": "cross-env MODULE=true babel src --out-dir module --delete-dir-on-start  --extensions \".tsx,.ts,.js\"",
     "build": "npm run build:module && npm run build:main",
     "build:proto": "source ./bin/run-proto.sh",
-    "prepublish": "npm run build",
+    "prepare": "./bin/prepare.sh",
+    "prepublish": "npm run build && tsc && npm run prepare",
     "dev": "cross-env NODE_ENV=development babel-node src/index",
     "watch": "cross-env NODE_ENV=development babel-watch src/index",
     "lint": "eslint src --fix",
